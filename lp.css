@@ -4,7 +4,6 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    overflow-y: scroll;
     background-color: #353839;
 }
 
@@ -160,7 +159,7 @@ body{
     border-radius: 6px;
     align-items: center;
     flex-direction: column;
-    background-color: #0d0b28;
+    background-color: #353839;
 }
 
 .subbed{
@@ -170,7 +169,8 @@ body{
     overflow: hidden;
     white-space: nowrap;
     margin-bottom: 20px;
-    background-color: #0a0328;
+    border-radius: 20px;
+    background-color: #2b2b2b;
     box-shadow: 0 0 5px rgba(55, 55, 55, 0.5);
 }
 
@@ -201,8 +201,8 @@ body{
     overflow: hidden;
     white-space: nowrap;
     margin-bottom: 20px;
-    border-radius: 10px;
-    background-color: #0a0328;
+    border-radius: 20px;
+    background-color: #2b2b2b;
     box-shadow: 0 0 5px rgba(55, 55, 55, 0.5);
 }
 
@@ -333,15 +333,24 @@ body{
 }
 
 .btns{
-    width: 60px;
+    width: 80px;
     height: 30px;
     display: flex;
     align-items: center;
     flex-direction: row;
     margin: 5px;
-    background-color: #353839;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 20px;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+#left-icon{
+    margin-left: 10px;
+}
+
+#right-icon{
+    margin-right: 10px;
 }
 
 .ttl{
