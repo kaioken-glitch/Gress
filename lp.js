@@ -28,7 +28,10 @@ function scrollMangaList(direction) {
     }
 }
 
-
+function previewImage(event) {
+    var uploadedImage = document.querySelector('.user img');
+    uploadedImage.src = URL.createObjectURL(event.target.files[0]);
+}
 
 // Function to fetch anime data from AniList API
 async function fetchAnimeData() {
