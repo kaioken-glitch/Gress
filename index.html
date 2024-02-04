@@ -5,37 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gress-The Latest On Anime And Manga</title>
     <link rel="stylesheet" href="./lp.css">
-    <link rel="shortcut icon" href="./gress-favicon-color.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./Field/gress-favicon-color.png" type="image/x-icon">
 </head>
 <body>
     
     <div class="large-cont">
        <div class="top-bar">
-        <div href="./lp.html" class="cin"><img src="./gress-high-resolution-logo-white-transparent.png" alt=""></div>
+        <div href="./lp.html" class="cin"><img src="./Field/gress-high-resolution-logo-white-transparent.png" alt=""></div>
 
         <ul class="nav-list">
             <li><a href="">Home</a></li>
             <li><a href="">Anime</a></li>
             <li><a href="">Manga</a></li>
             <div class="user">
-                <img src="./Field/gress-favicon-color.png" alt="Your Image">
-                <div class="overlay">
-                  <i class="fa-solid fa-pen"></i> <!-- Icon, you can replace it with any icon you want -->
+                <img src="" alt="Your Avatar">
+                <div class="overlay" onclick="document.getElementById('fileInput').click()">
+                  <i class="fa-solid fa-pen"></i>
                 </div>
             </div>
+            <input type="file" id="fileInput" accept="image/*" onchange="previewImage(event)" style="display: none;">
         </ul>
        </div>
 
        <div class="search-bar">
-        <input type="search" name="" id="" placeholder="Search...">
+        <input type="search" name="" id="searchInput" placeholder="One piece, Bleach, Naruto...">
         <i class="fa-solid fa-search" id="next"></i>
        </div>
 
        <div class="marged-body">
         <div class="subbed">
             <div class="ttl">
-                <li><a href="">Genral</a></li>
-                <select class="custom-select">
+                <li><a href="">Anime</a></li>
+                <select class="custom-select" id="selectPoint">
                     <option value="1">Subbed</option>
                     <option value="2">Dubbed</option>
                 </select>                  
